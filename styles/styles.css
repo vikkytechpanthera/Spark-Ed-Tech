@@ -1,0 +1,251 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+
+    
+
+    .logo {
+        color: white;
+        text-align: left;
+        margin-left: px;
+    }
+
+    .contact-info p {
+        margin-left: px;
+        text-align: left;
+    }
+    /* Adjust hero section layout */
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 1rem;
+        background-color: rgba(240, 248, 255, 0.769);
+    }
+
+    .text-content {
+        margin-bottom: 2rem;
+    }
+
+    .text-content h1 {
+        font-size: 1.8rem; /* Smaller heading size */
+    }
+
+    .text-content h3 {
+        
+    }
+
+    .text-content p {
+        font-size: 0.9rem; /* Smaller paragraph size */
+    }
+
+    .action-buttons {
+        flex-direction: column; /* Stack buttons */
+        gap: 1rem;
+    }
+
+    .illustration img {
+        max-width: 80%; /* Reduce image size for smaller screens */
+        margin: 0 auto;
+    }
+
+    /* Adjust header */
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .contact-info {
+        margin: 0.5rem 0;
+        font-size: 0.85rem;
+    }
+
+    .cta-button {
+        padding: 0.7rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+
+body {
+    font-family: Roboto, 'Arial';
+    color: #333;
+    line-height: 1.6;
+    background: url('/Sark-Ed-tech/img/slider1.jpg') no-repeat center right;
+    background-size: cover; /* Adjust to fit the design */
+    background-color: #fff; /* Fallback color */
+    
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.container p {
+    font-size: 12px;
+}
+.container a {
+    font-style: italic;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #ffffff09;
+    border-bottom: 1px solid #dddddd05;
+}
+
+.logo-img {
+    height: 5px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo span {
+    color: #007BFF;
+}
+
+.contact-info {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.cta-button a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Ensure the text inside the link matches the button style */
+    display: inline-block; /* Makes it align properly */
+    font-size: inherit; /* Match the font size of the button */
+    font-style: normal;
+}
+
+.cta-button:hover a {
+    color: #fff; /* Keep hover effect consistent */
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+.text-content span {
+    color: #007BFF;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: -25px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+.text-content h3 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    width: 500px;
+    color: #a12b2b;
+}
+
+.text-content p {
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.primary-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background-color: #0056b3;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.secondary-button:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Illustration */
+.illustration img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .illustration {
+        margin-top: 2rem;
+    }
+}
