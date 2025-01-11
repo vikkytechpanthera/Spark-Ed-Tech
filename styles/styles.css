@@ -75,12 +75,13 @@
 
 
 body {
-    font-family: Roboto, 'Arial';
+    font-family: Rubik, 'Arial';
     color: #333;
     line-height: 1.6;
     background: url('/Sark-Ed-tech/img/slider1.jpg') no-repeat center right;
     background-size: cover; /* Adjust to fit the design */
     background-color: #fff; /* Fallback color */
+    z-index: 100;
     
 }
 
@@ -119,7 +120,9 @@ body {
 }
 
 .logo span {
-    color: #007BFF;
+    color: #15579e;
+    font-family: Poppins;
+    font-weight: 500;
 }
 
 .contact-info {
@@ -133,7 +136,7 @@ body {
 }
 
 .cta-button {
-    background-color: #007BFF;
+    background-color: #1e5896;
     color: #fff;
     border: none;
     padding: 0.8rem 1.5rem;
@@ -144,7 +147,7 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #0056b3;
+    background-color: #324961;
 }
 
 .cta-button a {
@@ -173,7 +176,7 @@ body {
 }
 
 .text-content span {
-    color: #007BFF;
+    color: #0d4786;
 }
 
 .text-content h1 {
@@ -203,7 +206,7 @@ body {
 }
 
 .primary-button {
-    background-color: #007BFF;
+    background-color: #b61f5b;
     color: #fff;
     border: none;
     padding: 0.8rem 1.5rem;
@@ -213,13 +216,13 @@ body {
 }
 
 .primary-button:hover {
-    background-color: #0056b3;
+    background-color: #800528;
 }
 
 .secondary-button {
     background-color: transparent;
-    color: #007BFF;
-    border: 1px solid #007BFF;
+    color: #b61f5bF;
+    border: 1px solid #17426f;
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
     border-radius: 20px;
@@ -227,25 +230,15 @@ body {
 }
 
 .secondary-button:hover {
-    background-color: #007BFF;
+    background-color: #17426f;
     color: #fff;
 }
 
 /* Illustration */
 .illustration img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    
+   
+   
+    z-index: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .illustration {
-        margin-top: 2rem;
-    }
-}
