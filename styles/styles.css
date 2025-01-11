@@ -78,7 +78,7 @@ body {
     font-family: Rubik, 'Arial';
     color: #333;
     line-height: 1.6;
-    background: url('img/slider1.jpg') no-repeat center right;
+    background: url('/Sark-Ed-tech/img/slider1.jpg') no-repeat center right;
     background-size: cover; /* Adjust to fit the design */
     background-color: #fff; /* Fallback color */
     z-index: 100;
