@@ -177,20 +177,38 @@ button {
 /* Features Section */
 .features-section {
     background: url('styles/img/features-bg.jpg') center/cover no-repeat;
-    padding: 60px 0;
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.participant-resp-features {
+    padding: 35px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: #333;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: #262627a9 5px 5px 14px;
+    flex: 1;
+}
+
+.img-features {
+    flex: 1;
+    height: 500px;
+    width: 700px;
 }
 
 .participant-resp,
 .who-team {
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 23px;
     margin-bottom: 15px;
+   
 }
 
 .participant-resp-note p,
 .a-sales p {
-    font-size: 16px;
+    font-size: 13px;
     color: #333;
     line-height: 1.6;
     text-align: left;
@@ -236,6 +254,11 @@ button {
 
     .team-img {
         max-width: 50%;
+    }
+
+    .features-section {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
