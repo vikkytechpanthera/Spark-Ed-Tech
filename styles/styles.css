@@ -1,244 +1,258 @@
-/* General Reset */
-* {
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-
     
-
-    .logo {
-        color: white;
-        text-align: left;
-        margin-left: px;
-    }
-
-    .contact-info p {
-        margin-left: px;
-        text-align: left;
-    }
-    /* Adjust hero section layout */
-    .hero-section {
-        flex-direction: column;
-        text-align: center;
-        padding: 1.5rem 1rem;
-        background-color: rgba(240, 248, 255, 0.769);
-    }
-
-    .text-content {
-        margin-bottom: 2rem;
-    }
-
-    .text-content h1 {
-        font-size: 1.8rem; /* Smaller heading size */
-    }
-
-    .text-content h3 {
-        
-    }
-
-    .text-content p {
-        font-size: 0.9rem; /* Smaller paragraph size */
-    }
-
-    .action-buttons {
-        flex-direction: column; /* Stack buttons */
-        gap: 1rem;
-    }
-
-    .illustration img {
-        max-width: 80%; /* Reduce image size for smaller screens */
-        margin: 0 auto;
-    }
-
-    /* Adjust header */
-    .main-header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 1rem;
-    }
-
-    .contact-info {
-        margin: 0.5rem 0;
-        font-size: 0.85rem;
-    }
-
-    .cta-button {
-        padding: 0.7rem 1rem;
-        font-size: 0.85rem;
-    }
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    text-align: center;
 }
 
-
-body {
-    font-family: Rubik, 'Arial';
-    color: #333;
-    line-height: 1.6;
-    background: url('img/slider1.jpg') no-repeat center right;
-    background-size: cover; /* Adjust to fit the design */
-    background-color: #fff; /* Fallback color */
-    z-index: 100;
-    
+.background {
+    background-image: url(img/Product\ showcase\ spotlight\ on\ black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/* Container */
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
-    
+    margin: auto;
 }
-.container p {
-    font-size: 12px;
-}
-.container a {
-    font-style: italic;
+
+button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
 }
 
 /* Header */
 .main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-    background-color: #ffffff09;
-    border-bottom: 1px solid #dddddd05;
+    background-color: #ffffff3f;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.logo-img {
-    height: 5px;
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .logo {
-    font-size: 1.8rem;
+    font-size: 28px;
     font-weight: bold;
-    color: #333;
+    color: white;
+    text-align: left;
+    flex: 1;
 }
 
 .logo span {
-    color: #15579e;
-    font-family: Poppins;
-    font-weight: 500;
-}
-
-.contact-info {
-    font-size: 0.9rem;
-    color: #555;
-}
-
-.contact-info a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.cta-button {
-    background-color: #1e5896;
-    color: #fff;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.cta-button:hover {
-    background-color: #324961;
+    color: #0071e3;
 }
 
 .cta-button a {
-    text-decoration: none; /* Remove underline */
-    color: white; /* Ensure the text inside the link matches the button style */
-    display: inline-block; /* Makes it align properly */
-    font-size: inherit; /* Match the font size of the button */
-    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
 }
 
-.cta-button:hover a {
-    color: #fff; /* Keep hover effect consistent */
+.cta-button {
+    background: #0071e3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    
+}
+
+.cta-button:hover {
+    background: #005bb5;
+}
+
+/* Responsive CTA Button */
+@media (max-width: 768px) {
+    .cta-button {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border-radius: 50%;
+    }
+
+    .cta-button a {
+        display: none;
+    }
+
+    .cta-button::before {
+        content: '\1F517'; /* Unicode link icon */
+        font-size: 20px;
+        color: white;
+    }
 }
 
 /* Hero Section */
 .hero-section {
+   
+    padding: 80px 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 2rem 0;
-    
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(197, 227, 244);
+}
+
+.hero-section span {
+    color: #0071e3;
 }
 
 .text-content {
-    max-width: 600px;
-}
-
-.text-content span {
-    color: #0d4786;
-}
-
-.text-content h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-top: -25px;
-    line-height: 50px;
-    margin-bottom: 10px;
-}
-
-.text-content h3 {
-    margin-bottom: 15px;
-    font-weight: 600;
-    width: 500px;
-    color: #a12b2b;
-}
-
-.text-content p {
-    font-size: 17px;
-    color: #555;
-    margin-bottom: 1.5rem;
-}
-
-.action-buttons {
-    display: flex;
-    gap: 1rem;
+    color: aqua;
 }
 
 .primary-button {
-    background-color: #b61f5b;
-    color: #fff;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 20px;
-    cursor: pointer;
+    background: #0071e3;
+    color: white;
+    margin: 10px;
 }
 
-.primary-button:hover {
-    background-color: #800528;
+.secondary-button a {
+    text-decoration: none;
+    color: #e4eaf0;
+    font-weight: 500;
 }
 
 .secondary-button {
-    background-color: transparent;
-    color: #b61f5bF;
-    border: 1px solid #17426f;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 20px;
-    cursor: pointer;
+    background: rgba(255, 255, 255, 0.115);
+    border: 2px solid #0071e3;
+    color: #0071e3;
+    margin: 10px;
+    width: 200px;
 }
 
 .secondary-button:hover {
-    background-color: #17426f;
-    color: #fff;
+    background: #0071e3;
+    color: white;
 }
 
-/* Illustration */
-.illustration img {
+/* Why Section */
+.why {
+    background-color: #333;
+    color: white;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.why-us {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
     
-   
-   
-    z-index: 0;
 }
 
+.paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Features Section */
+.features-section {
+    background: url('styles/img/features-bg.jpg') center/cover no-repeat;
+    padding: 60px 0;
+    width: 50%;
+}
+
+.participant-resp,
+.who-team {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.participant-resp-note p,
+.a-sales p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.meet-our-team {
+    background: #0071e3;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.meet-our-team a {
+    text-decoration: none;
+    color: white;
+}
+
+.meet-our-team:hover {
+    background: #005bb5;
+}
+
+/* Team Section */
+.team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.team-img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .team-section {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .team-img {
+        max-width: 50%;
+    }
+}
+
+/* Footer */
+footer {
+    background: #1d1d1f;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-radius: 20px 20px 0 0;
+}
+
+footer a {
+    color: #0071e3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
