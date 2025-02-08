@@ -88,6 +88,7 @@ button {
 
     .cta-button a {
         display: none;
+       
     }
 
     .cta-button::before {
@@ -95,6 +96,7 @@ button {
         font-size: 20px;
         color: white;
     }
+    
 }
 
 /* Hero Section */
@@ -176,9 +178,9 @@ button {
 
 /* Features Section */
 .features-section {
-    background: url('styles/img/features-bg.jpg') center/cover no-repeat;
-    display: flex;
-    flex-wrap: wrap;
+    background: url('img/img1.png');
+    
+    
     
 }
 
@@ -191,19 +193,21 @@ button {
     border-radius: 10px;
     box-shadow: #262627a9 5px 5px 14px;
     flex: 1;
+    background-color: #c3c1c3ef;
 }
 
 .img-features {
     flex: 1;
     height: 500px;
-    
+    max-width: 250px;
+    display: none;
 }
 
 .participant-resp,
 .who-team {
     font-size: 23px;
     margin-bottom: 15px;
-   
+    font-weight: 600;
 }
 
 .participant-resp-note p,
@@ -239,6 +243,15 @@ button {
     margin-top: 40px;
 }
 
+.dash-team {
+    padding: 35px 25px;
+    margin: 60px 10px 10px 10px;
+    border: #333;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: #262627a9 5px 5px 14px;
+}
+
 .team-img {
     width: 100%;
     max-width: 600px;
@@ -252,14 +265,13 @@ button {
         justify-content: space-between;
     }
 
-    .team-img {
-        max-width: 50%;
+   
+    .participant-resp-features {
+       margin: 10px;
+       flex: 1;
     }
 
-    .features-section {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+
 }
 
 /* Footer */
